@@ -12,14 +12,14 @@ class Config:
     # configuration of mail
     MAIL_SERVER = 'smtp.office365.com'
     MAIL_PORT = 587
-    MAIL_USERNAME = 'salomat423@gmail.com'
-    MAIL_PASSWORD = '221502Ernur@'
+    MAIL_USERNAME = '@gmail.com'
+    MAIL_PASSWORD = 
     MAIL_USE_TLS = True
     MAIL_USE_SSL = False
     FLASK_ADMIN_SWATCH = 'flatly'  # lumen cyborg flatly
 
     # configuration of database
-    SQLALCHEMY_DATABASE_URI = "postgresql://userimec:Pin.1234@172.16.1.13:5432/pyapp1"
+    SQLALCHEMY_DATABASE_URI = "postgresql://"
 
 
 class DevelopmentConfig(Config):
