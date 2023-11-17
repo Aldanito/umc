@@ -15,8 +15,8 @@ file_path = op.join(op.dirname(__file__), 'static/files')
 
 @app.route("/forward/<string:user>/<string:phone>", methods=['GET', 'POST'])
 def smail(user, phone):
-    sender = "salomat423@gmail.com"
-    password = "221502Ernur@"
+    sender = "@gmail.com"
+    password = 
     server = smtplib.SMTP("smtp.office365.com", 587)
     server.starttls()
 
