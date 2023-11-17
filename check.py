@@ -4,7 +4,7 @@ import psycopg2
 
 # #establishing the connection for deleting data
 conn = psycopg2.connect(
-   database="postgres", user='postgres', password='ALDANM', host='127.0.0.1', port= '5432'
+   database="postgres", user='postgres', password='', host='..', port= ''
 )
 cursor = conn.cursor()
 sql = '''SET search_path TO public;'''
