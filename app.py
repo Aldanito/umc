@@ -23,11 +23,11 @@ admin = Admin(app, template_mode='bootstrap4')
 @app.route("/forward/<string:user>/<string:phone>", methods=['GET','POST'])
 def move_forward(user,phone):
     conn = psycopg2.connect(
-        host="172.16.1.13",
-        port='5432',
-        database="pyapp1",
-        user='userimec',
-        password='Pin.1234')
+        host=,
+        port='',
+        database="",
+        user='',
+        password='')
 
     cursor = conn.cursor()
     sql = '''SELECT email from username'''
