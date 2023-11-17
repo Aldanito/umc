@@ -1,0 +1,10 @@
+
+{% extends 'admin/model/create.html' %}
+
+{% block tail %}
+    {{ super() }}
+    {{ ckeditor.load() }}
+    {{ ckeditor.config(name='en') }}
+    {{ ckeditor.config(name='ru') }}
+    {{ ckeditor.config(name='kz') }}
+{% endblock %}

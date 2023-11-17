@@ -1,0 +1,46 @@
+<div class="modal fade" id="ticket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 lang ='en' class="modal-title" id="exampleModalLabel">Request a call</h5>
+          <h5 lang ='ru' class="modal-title" id="exampleModalLabel">Заказать звонок</h5>
+          <h5 lang ='kz' class="modal-title" id="exampleModalLabel">Қоңырауды сұрау</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label lang ='en' for="recipient-name" class="col-form-label " required>FULL NAME:</label>
+              <label lang ='ru' for="recipient-name" class="col-form-label" required> ФИО:</label>
+              <label lang ='kz' for="recipient-name" class="col-form-label" required>ТОЛЫҚ АТЫ:</label>
+              <input type="text" class="form-control" name="fname" id="fname" >
+
+            </div>
+            <div class="form-group">
+              <label lang ='en' for="phone_number" class="col-form-label" required>Phone number:</label>
+              <label lang ='ru' for="phone_number" class="col-form-label" required>Номер телефона:</label>
+              <label lang ='kz' for="phone_number" class="col-form-label" required>Телефон нөмірі:</label>
+              <input type="text" class="form-control" name="phone_number" id="phone_number">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button lang ='en' type="button" onclick="othername();" class="btn btn-success">Send</button>
+          <button lang ='ru' type="button" onclick="othername();" class="btn btn-success">Отправить</button>
+          <button lang ='kz' type="button" onclick="othername();" class="btn btn-success">Жіберу</button>
+          <script>
+            function othername() {
+              window.location.href='/forward/'+document.getElementById("fname").value+'/'+document.getElementById("phone_number").value
+          }
+          </script>
+          <button lang ='en' type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button lang ='ru' type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+          <button lang ='kz' type="button" class="btn btn-danger" data-dismiss="modal">жабy</button>
+        </div>
+      </div>
+    </div>
+</div>
+    </div>
+</div>
